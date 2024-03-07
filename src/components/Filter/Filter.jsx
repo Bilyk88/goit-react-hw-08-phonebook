@@ -11,13 +11,13 @@ export const Filter = () => {
   };
 
   return (
-    <>
+    <div style={{ margin: '30px 0' }}>
       <p>Find contacts by name</p>
       <input
         type="text"
         value={filter}
         onChange={e => updateFilter(e.target.value)}
       />
-    </>
+    </div>
   );
 };

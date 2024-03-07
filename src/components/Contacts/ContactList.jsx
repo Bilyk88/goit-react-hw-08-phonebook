@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { ContactItem } from './ContactItem';
-import { ContactListStyled } from './Contacts.styled';
 import { getContacts, getFilter } from '../../redux/selectors';
 import { deleteContact } from '../../redux/api';
 
@@ -18,7 +17,7 @@ export const ContactList = () => {
   };
 
   return (
-    <ContactListStyled>
+    <ul>
       {filterContacts.map(({ id, name, number }) => {
         return (
           <ContactItem
@@ -30,6 +29,6 @@ export const ContactList = () => {
           />
         );
       })}
-    </ContactListStyled>
+    </ul>
   );
 };

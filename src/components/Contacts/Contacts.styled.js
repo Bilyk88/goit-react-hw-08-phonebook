@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 
-export const ContactListStyled = styled.ul`
-  padding: 25px;
+export const ContactStyled = styled.li`
+  width: 300px;
+  display: flex;
+  margin-bottom: 5px;
 `;
 
 export const Button = styled.button`
-  max-width: 60px;
+  margin-left: auto;
   border: none;
-  border-radius: 10px;
-  margin-left: 12px;
-  padding: 8px;
-  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 2px 6px;
+  background-color: #eb9da7;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #e84a5f;
   }
 `;
